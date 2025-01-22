@@ -201,6 +201,27 @@ public enum AlertKitAPI {
 public protocol AlertIconAnimatable {
   func animate()
 }
+public var kViewMinimumRenderableOpacity: Swift.Double {
+  get
+}
+extension SwiftUICore.View {
+  @inlinable @_Concurrency.MainActor @preconcurrency public func minimumRenderableOpacity() -> some SwiftUICore.View {
+        opacity(kViewMinimumRenderableOpacity)
+    }
+  
+}
+extension SwiftUICore.View {
+  @inlinable @_Concurrency.MainActor @preconcurrency public func onInitialAppear(perform action: (() -> Swift.Void)? = nil) -> some SwiftUICore.View {
+        modifier(_InitialAppearModifier(perform: action))
+    }
+  
+}
+@_Concurrency.MainActor @preconcurrency public struct _InitialAppearModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(perform action: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func body(content: DarockUI._InitialAppearModifier.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI22_InitialAppearModifierV4body7contentQr05SwiftB005_ViewE8_ContentVyACG_tF", 0) __
+}
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func centerAligned() -> some SwiftUICore.View
   
@@ -288,6 +309,7 @@ extension DarockUI.UIAlert.AlertViewStyle : Swift.Equatable {}
 extension DarockUI.UIAlert.AlertViewStyle : Swift.Hashable {}
 extension DarockUI.UIAlert.AlertHaptic : Swift.Equatable {}
 extension DarockUI.UIAlert.AlertHaptic : Swift.Hashable {}
+extension DarockUI._InitialAppearModifier : Swift.Sendable {}
 extension DarockUI.Zoomable : Swift.Sendable {}
 extension DarockUI.WebView : Swift.Sendable {}
 extension DarockUI.TextSelectView : Swift.Sendable {}

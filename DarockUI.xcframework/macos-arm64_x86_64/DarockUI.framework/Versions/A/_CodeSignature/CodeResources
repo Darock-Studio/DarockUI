@@ -8,6 +8,15 @@
 		<data>
 		pqOhr8BzLQs4Z5GgkTE1N0t9dHA=
 		</data>
+		<key>Resources/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RGWC+lDyaKcLcQpx/+ElugopgTY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -22,14 +31,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fa6RZKxWq2miR0jLyYISC3bOhPJJblfz4XiRcpY7rJw=
+			KBvn6HzDEtI+8Pna0e6sM0Q+mJVCbpkRBs/mzriyxus=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/Project/x86_64-apple-macos.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8MLYs7715i24c5rnIk/n2Cq8ZsaML4PRVASd91qqrH4=
+			UmcrdviyrB34CsUw2x4QVl9PRKBECiBGSYFvVpH3PtQ=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-macos.abi.json</key>
@@ -43,7 +52,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3xoYEdHGvbIl+qGMNkRAdzHk9tBlfGnuwInO9wKhhIs=
+			THbK8uHN7C8iDqIbBvyxgmpzOt9ReBRxnb/3PJf+Cgo=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-macos.swiftdoc</key>
@@ -57,14 +66,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3xoYEdHGvbIl+qGMNkRAdzHk9tBlfGnuwInO9wKhhIs=
+			THbK8uHN7C8iDqIbBvyxgmpzOt9ReBRxnb/3PJf+Cgo=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sw3gvmU0qU8ABrZIL4A3mSdi5wh3o6rqmYLpRC5wsR0=
+			AymHg1okYk9dJZAN2rMd2u8xePRL2Rn+Yd1j2Kkcdl4=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-macos.abi.json</key>
@@ -78,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D9z9gvWcwgjRXWHPtgtbxkeF6hHUASZA94HD8f4vhvY=
+			5MTlURnHIgNZTy8uez1is1Yl99MpJ+YCDexf6iadpmk=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-macos.swiftdoc</key>
@@ -92,14 +101,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D9z9gvWcwgjRXWHPtgtbxkeF6hHUASZA94HD8f4vhvY=
+			5MTlURnHIgNZTy8uez1is1Yl99MpJ+YCDexf6iadpmk=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQflVuWd8pGIvgfl2U+S/IjoSKXVxtJFnCUNbfN8UAQ=
+			b9KAtSG9/i88fI65YK2qqeZAojdqhJ8wL/E6zlCGJGI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -115,6 +124,15 @@
 			<data>
 			sV5h4XB1DqFkyIW6WlwywyPRmQnxsnD+u9ums9IdW1s=
 			</data>
+		</dict>
+		<key>Resources/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CrNXK1QnwLuKB3pqftTwHpIqnQvXfesN2zfVNioPwIo=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

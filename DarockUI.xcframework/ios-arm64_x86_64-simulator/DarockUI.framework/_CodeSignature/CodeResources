@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		nqEGR1OQnG+dmHp6ypuNeNLqo6o=
+		kVPKhW2+E5vPcXA4+FHJALJ3rfQ=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		FS7iHDKwk9gbHwV67bWTqpASUT8=
+		+EmUuR3sbLkat4QfPv9eKjUM6C0=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WkXNJz7CI2XDuOfvK0QOuPsHtL8=
+		FFMNQzebICnbL2TyEKhm4eUcUic=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WkXNJz7CI2XDuOfvK0QOuPsHtL8=
+		FFMNQzebICnbL2TyEKhm4eUcUic=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1Z6nibWXO6rHL13pCg9LGIa7UwY=
+		FZb9xSnY1FvMUOKVCEPqP9tWMMY=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3wnvIoczjg0+zwIwmOFAxXEl82Q=
+		pvfgee4wPku3INxsGefPgKR/Dgg=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,16 +54,25 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3wnvIoczjg0+zwIwmOFAxXEl82Q=
+		pvfgee4wPku3INxsGefPgKR/Dgg=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zsgOCD4uu7aCZVOf5G+KnE8dERo=
+		1LNL2OA3qyGb1+OSCqr0kghNkH4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		U0kb1LWpy/jLA0zWloeEq7sNN5I=
 		</data>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E5XEJFkgKA9kA07lHcrKseUT0t4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -78,14 +87,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			id+orHbERfolF0VAVpr3Yz2xO/sIRjVW87/UoX5Yx9Q=
+			cmTWbd5wMYDVkW5x/tRkGhac5LHU2QmvjWECw5deqRE=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9yT0miWpyqVOCbdVrVoM+k/+n9mcY/eW7XM7vo/PQJ0=
+			lz1nhRU1Zcd+PXD4ip4xYGW6BCPCE2XZKJxG9g0CxLo=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -99,7 +108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mnBYV2gO/O11n20cTOfQ6mMXxLcyuthWr09LMqsePCk=
+			gsgiRErfZMMV8XQiLgBGe+bH4x0UdW/24O0rQIVCjGk=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -113,14 +122,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mnBYV2gO/O11n20cTOfQ6mMXxLcyuthWr09LMqsePCk=
+			gsgiRErfZMMV8XQiLgBGe+bH4x0UdW/24O0rQIVCjGk=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yYzVND1olKA9rcKkiVqQcQ+qVAqTzmxngqEws7goL8k=
+			wys1dpuf6GEuNUjdvaSu6VDyBeqLvcEFJhOkRBOQTzw=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -134,7 +143,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			64Aeia5B6cbDijG8UBuejbcA7nbEKbpWyNPaNeMHjYU=
+			PuH6A93WfTU8MjPkUxv656taBspW1bQTmxMDluhKbyI=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -148,14 +157,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			64Aeia5B6cbDijG8UBuejbcA7nbEKbpWyNPaNeMHjYU=
+			PuH6A93WfTU8MjPkUxv656taBspW1bQTmxMDluhKbyI=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0fkBrpblX9tcVl53LBvBh6ulgcfF5gzrsVahKFI2goM=
+			xRBEmnN1h9CLxHcXb3EIsbDpqAqkNQkET9Mn32R3cr0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -164,6 +173,15 @@
 			<data>
 			1UcV9YmADdGtslqOg93nm0QpMgDe31tZCnt55IoDd+k=
 			</data>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nf6H2PCT8HZ70Jb2cQ745+d68AGfn6JM7NxQT6c7kEA=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
