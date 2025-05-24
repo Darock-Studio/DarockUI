@@ -316,16 +316,67 @@ extension SwiftUICore.View {
   
   public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI22_InitialAppearModifierV4body7contentQr05SwiftB005_ViewE8_ContentVyACG_tF", 0) __
 }
+@available(iOS, unavailable)
+@available(macOS, unavailable)
+@_Concurrency.MainActor @preconcurrency public struct Menu<Label, Content> : SwiftUICore.View where Label : SwiftUICore.View, Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI4MenuV4bodyQrvp", 0) __<Label, Content>
+}
+@available(*, unavailable)
+extension DarockUI.Menu : Swift.Sendable {
+}
+@available(iOS, unavailable)
+@available(macOS, unavailable)
+extension DarockUI.Menu {
+  @_Concurrency.MainActor @preconcurrency public init(@SwiftUICore.ViewBuilder content: () -> Content, @SwiftUICore.ViewBuilder label: () -> Label)
+  @_Concurrency.MainActor @preconcurrency public init(_ titleKey: SwiftUICore.LocalizedStringKey, @SwiftUICore.ViewBuilder content: () -> Content) where Label == SwiftUICore.Text
+  @_disfavoredOverload @_Concurrency.MainActor @preconcurrency public init<S>(_ title: S, @SwiftUICore.ViewBuilder content: () -> Content) where Label == SwiftUICore.Text, S : Swift.StringProtocol
+}
+@available(iOS, unavailable)
+@available(macOS, unavailable)
+extension DarockUI.Menu where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_alwaysEmitIntoClient @_Concurrency.MainActor @preconcurrency public init(_ titleKey: SwiftUICore.LocalizedStringKey, systemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content) {
+        self.init {
+            content()
+        } label: {
+            Label(titleKey, systemImage: systemImage)
+        }
+    }
+  @_alwaysEmitIntoClient @_disfavoredOverload @_Concurrency.MainActor @preconcurrency public init<S>(_ title: S, systemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol {
+        self.init {
+            content()
+        } label: {
+            Label(title, systemImage: systemImage)
+        }
+    }
+}
+@available(watchOS 10.0, *)
+@available(iOS, unavailable)
+@available(macOS, unavailable)
+extension DarockUI.Menu where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @available(iOS 17.0, macOS 14.0, *)
+  @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @_Concurrency.MainActor @preconcurrency public init(_ titleKey: SwiftUICore.LocalizedStringKey, image: DeveloperToolsSupport.ImageResource, @SwiftUICore.ViewBuilder content: () -> Content)
+  @available(iOS 17.0, macOS 14.0, *)
+  @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @_disfavoredOverload @_Concurrency.MainActor @preconcurrency public init<S>(_ title: S, image: DeveloperToolsSupport.ImageResource, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol
+}
 extension SwiftUICore.View {
   @available(watchOS 7.0, *)
   @available(iOS, unavailable)
   @available(macOS, unavailable)
-  @_Concurrency.MainActor @preconcurrency public func contextMenu<MenuItems>(@SwiftUICore.ViewBuilder menuItems: () -> MenuItems) -> some SwiftUICore.View where MenuItems : SwiftUICore.View
+  @_Concurrency.MainActor @preconcurrency public func contextMenu<MenuItems>(@SwiftUICore.ViewBuilder menuItems: @escaping () -> MenuItems) -> some SwiftUICore.View where MenuItems : SwiftUICore.View
   
   @available(watchOS 7.0, *)
   @available(iOS, unavailable)
   @available(macOS, unavailable)
-  @_Concurrency.MainActor @preconcurrency public func contextMenu<M, P>(@SwiftUICore.ViewBuilder menuItems: () -> M, @SwiftUICore.ViewBuilder preview: () -> P) -> some SwiftUICore.View where M : SwiftUICore.View, P : SwiftUICore.View
+  @_Concurrency.MainActor @preconcurrency public func contextMenu<M, P>(@SwiftUICore.ViewBuilder menuItems: @escaping () -> M, @SwiftUICore.ViewBuilder preview: () -> P) -> some SwiftUICore.View where M : SwiftUICore.View, P : SwiftUICore.View
   
 }
 extension SwiftUICore.View {

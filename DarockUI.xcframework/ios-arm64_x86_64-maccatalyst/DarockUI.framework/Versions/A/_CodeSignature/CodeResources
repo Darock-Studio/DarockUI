@@ -31,14 +31,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VzmyGYqlaetbGDa4dhH2tLZ6Rl36XoEft4+pkDPYTm0=
+			2Z9qGgq7Zn+ZoZD0VFs3/7DtUD5YY8pvzoXCX0h5dhc=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/Project/x86_64-apple-ios-macabi.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NQaOf+emSyn8B3kvlGzL08ZGzXQ025GVmA84irBcd8s=
+			dQxr/HUPbSyaeP4yTDaVPPmTVvg8glyToS/BN782OrQ=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
@@ -52,7 +52,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ZKC1+oVvoJXlLVgROGM7i/Mc92PKQBAyCukq3BwEA8=
+			SXH4a66ifhQYkd9AbD68Fs5tm+xNHFcKKFiWZzuIuok=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
@@ -66,14 +66,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ZKC1+oVvoJXlLVgROGM7i/Mc92PKQBAyCukq3BwEA8=
+			zDMl3mzGn8BgnYVoIbQYm9BPQ1995latcwqkMlhjEa0=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rWfCqKDVjcweuBGkYo7DKiQ6D5LiQaoKR8F5BuPor3Y=
+			OEyU/MCa/zfjbORYj2y93tB7KMuiENEYcThgn1Ju5Ls=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4WSGh3YSVx9P/q5mQ/iAHZK65CJt7iqsCmHBj6bf7TQ=
+			uE9B5O+ugRI4s79KO5GfBEb3IFhtF2QaGV+T0PiliUg=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -101,14 +101,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4WSGh3YSVx9P/q5mQ/iAHZK65CJt7iqsCmHBj6bf7TQ=
+			1570V9lKNzl8CTUijUFtteEgO8R3qP3NJi4Uu3g4Yo4=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtuUn7Zg3+1YfEeKv1mq8G+GKmmoLD5vbIxneM3AwCc=
+			y6xWCP/jfDiTlZg62b6J8rt0IADc+ELHjiok8JDX+iM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

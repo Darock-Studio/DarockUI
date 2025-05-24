@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		+EmgBEIfk6xtkZH7aTIgHP3UqDI=
+		</data>
 		<key>Headers/DarockUI.h</key>
 		<data>
 		IUAE4xryElGULJLcHUOHmlwqcIE=
@@ -14,11 +18,11 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		aTuDOZafq4jzqp7eD48T5t9PYR4=
+		xLjjCIrMEkUpPzA6Olwi1E5LKXU=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Gg752/UDASmDPCrw5e9mJ3nQT/s=
+		ryirAYAsjYZiCb+Iyayz51xAyCU=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FSf5iB7nJ77fH9tP/Hu7tEpmfh8=
+		4t8cmJQ0Ozl7zf5KAJBd2pb5dP8=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +38,11 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FSf5iB7nJ77fH9tP/Hu7tEpmfh8=
+		AZ+MJQyilzjHSdh+A9/0wktYvRc=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WeHKB+XiWbKZfXWmYM49cMXs6wg=
+		Vu4x7MC2qYKOmdQeai9Oz9Fgz4g=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +50,7 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7MqTybtKDctGvEZ/sPAosFUJikM=
+		+lTyQpIrf5Vkugn4R6Uc7U11MnY=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +58,11 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7MqTybtKDctGvEZ/sPAosFUJikM=
+		ngJVGj7OM+lGsHl8+QV0OYL+f+4=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GbMkhrCrKnn8ZzxEeCCly4UQomI=
+		wgLgTEdt6iH8kUTsVi1aa6t1lO8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,14 +91,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m3szyHTqmbjc7ii84j21J070V5NZCuXxyqW42eqqkhk=
+			V5Cr1thVTHWt9qOIxGXE7d3Gj6GjOJwP3/oualPEUlM=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MMUcu9L3B8zKDy1LTvcKPiLcFKWqIlCQYWgaQTO2Fyg=
+			OF7IjwHlPhGtDcJjc2wwjMIg4zLbJGvzE5kchhtpE0M=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -108,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EB+BC6MsQ1HKNLWf+aGi7m5y8t4b7L91Ag98WOuWo9o=
+			Z7KYZ+THAyIrHxVfddBaBoFC5nn8PF0RfqWHpZeuNVg=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -122,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EB+BC6MsQ1HKNLWf+aGi7m5y8t4b7L91Ag98WOuWo9o=
+			q1d89KTuOI3famTp2JcgNc0dM9rcwnA2syHHbLS87OE=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H/plAuzX7PMiyijEeN+f8cKzmRhagkpGFabsnatumhw=
+			1lPEI9OwnKKc6V0zst410/clpodvwg6ArQTB+KZnfTc=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -143,7 +147,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FdPaF88bOZN7DfMA4I1H1DqqVkK7EnhoRT096ZG7OV8=
+			v7QSvYV+QOx/qgfP2h0xeTzvp8zjy/8qQNp7OJ0qf+U=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -157,14 +161,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FdPaF88bOZN7DfMA4I1H1DqqVkK7EnhoRT096ZG7OV8=
+			vwAGyBh0a9duhNkT43ZmX8+Bnj2+SprAGjZz8AB+3Wk=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ZujRX7dlSdK4DpXxaddxzVQgvf7IjbPSxlEo7v+3do=
+			wnJX3Gu6NEMNFpsnLbJB6t5DKQ0m1m8QACZrfMcHJpc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
