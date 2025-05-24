@@ -4,17 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		6GhW6ZQg7D3yEOg3SpYaTe3YZF8=
+		</data>
 		<key>Headers/DarockUI.h</key>
 		<data>
 		IUAE4xryElGULJLcHUOHmlwqcIE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		p/WxzZluZcKoNKxMT0SDx7mUrVg=
+		y2ejU0TuYomPy2JgLwkDUowoc/4=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		ve/RzESpWzKHyxH/cMJmoXT3mvI=
+		xhi6E+/6iMB4ednY5Hdwt+D7iLQ=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -22,7 +26,7 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		jdxjJQACLHvEgXDAMJEcHFuxiBs=
+		dZhA84VSxZUsi1PAJx9m3SLiF14=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +34,11 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		jdxjJQACLHvEgXDAMJEcHFuxiBs=
+		dZhA84VSxZUsi1PAJx9m3SLiF14=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ovZQgPnP2oGsu26LzJcuI5Jwswc=
+		5DguOK7WPfqAtlVdraZf4xww7+M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nq+yw6ZikTfR7i/VMZJhweaeS0N1+BVQNV8vP7XojaQ=
+			OHDSrGgS06k8B5MmXBRvxtcQhhArZ1NxDkxuJSlDoOQ=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -77,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O/bBNowjDIvhFuKSpD9/rxrg/9G5Sv/Sm4ZsQXCMZcc=
+			DRGadMoHO2ZmrE1lwaAMwJRYdMm2ssytap0mKgYf2ts=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -91,14 +95,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O/bBNowjDIvhFuKSpD9/rxrg/9G5Sv/Sm4ZsQXCMZcc=
+			DRGadMoHO2ZmrE1lwaAMwJRYdMm2ssytap0mKgYf2ts=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EBEOTtSPhmds4ih8VnC/EzHb9mYgh0pMJwVJfuGkDyY=
+			9zjUXc0hbCBuh3+N13FZyXVIvUgoBkRmZJXfDsvJWzY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

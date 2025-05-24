@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64_32-apple-watchos9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DarockUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import DarockUI
 import Foundation
 import Swift
@@ -123,6 +124,178 @@ public func NeuToggle(_ titleKey: SwiftUICore.LocalizedStringKey, isOn: SwiftUIC
 
 public func NeuNavigationLink(@SwiftUICore.ViewBuilder destination: () -> some View, @SwiftUICore.ViewBuilder label: () -> some View, cornerRadius: CoreFoundation.CGFloat = 18, paddings: [CoreFoundation.CGFloat] = [5, 20], width: CoreFoundation.CGFloat? = nil) -> some SwiftUICore.View
 
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Swift.Int : @retroactive Swift.Identifiable {
+  public var id: Swift.Int {
+    get
+  }
+  public typealias ID = Swift.Int
+}
+#else
+extension Swift.Int : Swift.Identifiable {
+  public var id: Swift.Int {
+    get
+  }
+  public typealias ID = Swift.Int
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Swift.Int8 : @retroactive Swift.Identifiable {
+  public var id: Swift.Int8 {
+    get
+  }
+  public typealias ID = Swift.Int8
+}
+#else
+extension Swift.Int8 : Swift.Identifiable {
+  public var id: Swift.Int8 {
+    get
+  }
+  public typealias ID = Swift.Int8
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Swift.Int16 : @retroactive Swift.Identifiable {
+  public var id: Swift.Int16 {
+    get
+  }
+  public typealias ID = Swift.Int16
+}
+#else
+extension Swift.Int16 : Swift.Identifiable {
+  public var id: Swift.Int16 {
+    get
+  }
+  public typealias ID = Swift.Int16
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Swift.Int32 : @retroactive Swift.Identifiable {
+  public var id: Swift.Int32 {
+    get
+  }
+  public typealias ID = Swift.Int32
+}
+#else
+extension Swift.Int32 : Swift.Identifiable {
+  public var id: Swift.Int32 {
+    get
+  }
+  public typealias ID = Swift.Int32
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Swift.Int64 : @retroactive Swift.Identifiable {
+  public var id: Swift.Int64 {
+    get
+  }
+  public typealias ID = Swift.Int64
+}
+#else
+extension Swift.Int64 : Swift.Identifiable {
+  public var id: Swift.Int64 {
+    get
+  }
+  public typealias ID = Swift.Int64
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+@available(iOS 18.0, watchOS 11.0, macOS 15.0, visionOS 2.0, *)
+extension Swift.Int128 : @retroactive Swift.Identifiable {
+  public var id: Swift.Int128 {
+    get
+  }
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias ID = Swift.Int128
+}
+#else
+@available(iOS 18.0, watchOS 11.0, macOS 15.0, visionOS 2.0, *)
+extension Swift.Int128 : Swift.Identifiable {
+  public var id: Swift.Int128 {
+    get
+  }
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias ID = Swift.Int128
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Swift.Float : @retroactive Swift.Identifiable {
+  public var id: Swift.Float {
+    get
+  }
+  public typealias ID = Swift.Float
+}
+#else
+extension Swift.Float : Swift.Identifiable {
+  public var id: Swift.Float {
+    get
+  }
+  public typealias ID = Swift.Float
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Swift.Double : @retroactive Swift.Identifiable {
+  public var id: Swift.Double {
+    get
+  }
+  public typealias ID = Swift.Double
+}
+#else
+extension Swift.Double : Swift.Identifiable {
+  public var id: Swift.Double {
+    get
+  }
+  public typealias ID = Swift.Double
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Swift.String : @retroactive Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public typealias ID = Swift.String
+}
+#else
+extension Swift.String : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public typealias ID = Swift.String
+}
+#endif
+extension SwiftUICore.View {
+  @inlinable @_Concurrency.MainActor @preconcurrency public func wrapIf(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder in container: (Self) -> some View) -> some SwiftUICore.View {
+        if condition {
+            container(self)
+        } else {
+            self
+        }
+    }
+  
+  @inlinable @_Concurrency.MainActor @preconcurrency public func wrapIf(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder in container: (Self) -> some View, @SwiftUICore.ViewBuilder else elseContainer: (Self) -> some View) -> some SwiftUICore.View {
+        if condition {
+            container(self)
+        } else {
+            elseContainer(self)
+        }
+    }
+  
+}
+@inlinable public func ifContainer<T, U, V>(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder true trueContainer: @escaping (SwiftUICore.AnyView) -> T, @SwiftUICore.ViewBuilder false falseContainer: @escaping (SwiftUICore.AnyView) -> U, @SwiftUICore.ViewBuilder containing containingView: @escaping () -> V) -> some SwiftUICore.View where T : SwiftUICore.View, U : SwiftUICore.View, V : SwiftUICore.View {
+    if condition {
+        trueContainer(.init(containingView()))
+    } else {
+        falseContainer(.init(containingView()))
+    }
+}
+
+@_Concurrency.MainActor @preconcurrency public struct DelayedProgressView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(delayInterval interval: Foundation.TimeInterval = 3)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI19DelayedProgressViewV4bodyQrvp", 0) __
+}
 public var kViewMinimumRenderableOpacity: Swift.Double {
   get
 }
@@ -143,6 +316,18 @@ extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func body(content: DarockUI._InitialAppearModifier.Content) -> some SwiftUICore.View
   
   public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI22_InitialAppearModifierV4body7contentQr05SwiftB005_ViewE8_ContentVyACG_tF", 0) __
+}
+extension SwiftUICore.View {
+  @available(watchOS 7.0, *)
+  @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @_Concurrency.MainActor @preconcurrency public func contextMenu<MenuItems>(@SwiftUICore.ViewBuilder menuItems: () -> MenuItems) -> some SwiftUICore.View where MenuItems : SwiftUICore.View
+  
+  @available(watchOS 7.0, *)
+  @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @_Concurrency.MainActor @preconcurrency public func contextMenu<M, P>(@SwiftUICore.ViewBuilder menuItems: () -> M, @SwiftUICore.ViewBuilder preview: () -> P) -> some SwiftUICore.View where M : SwiftUICore.View, P : SwiftUICore.View
+  
 }
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func centerAligned() -> some SwiftUICore.View
@@ -198,9 +383,7 @@ public struct ScrollViewOffsetPreferenceKey : SwiftUICore.PreferenceKey {
   public typealias Value = CoreFoundation.CGFloat
 }
 extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func wrapIf(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder in container: (Self) -> some View) -> some SwiftUICore.View
-  
-  @_Concurrency.MainActor @preconcurrency public func wrapIf(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder in container: (Self) -> some View, @SwiftUICore.ViewBuilder else elseContainer: (Self) -> some View) -> some SwiftUICore.View
+  @_Concurrency.MainActor @preconcurrency public func reversedMask<Mask>(alignment: SwiftUICore.Alignment = .center, @SwiftUICore.ViewBuilder _ mask: () -> Mask) -> some SwiftUICore.View where Mask : SwiftUICore.View
   
 }
 extension DarockUI.NeumorphicKit.ColorSchemeType : Swift.Equatable {}
@@ -212,6 +395,7 @@ extension DarockUI.SoftDynamicButtonStyle : Swift.Sendable {}
 extension DarockUI.SoftButtonStyle : Swift.Sendable {}
 extension DarockUI.SoftDynamicToggleStyle : Swift.Sendable {}
 extension DarockUI.SoftSwitchToggleStyle : Swift.Sendable {}
+extension DarockUI.DelayedProgressView : Swift.Sendable {}
 extension DarockUI._InitialAppearModifier : Swift.Sendable {}
 extension DarockUI.VolumeControlView : Swift.Sendable {}
 extension DarockUI.Zoomable : Swift.Sendable {}

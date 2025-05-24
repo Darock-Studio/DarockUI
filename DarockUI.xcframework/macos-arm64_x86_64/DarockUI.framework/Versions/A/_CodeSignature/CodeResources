@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		pqOhr8BzLQs4Z5GgkTE1N0t9dHA=
+		arztdoLVZwmNrg/UaopuUAhK/Yw=
 		</data>
 		<key>Resources/en.lproj/Localizable.strings</key>
 		<dict>
@@ -31,14 +31,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KBvn6HzDEtI+8Pna0e6sM0Q+mJVCbpkRBs/mzriyxus=
+			lRzr0aqk2p0uTxTQSlIJ15GAAwZVNGi/5dYX4ZSP7pU=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/Project/x86_64-apple-macos.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UmcrdviyrB34CsUw2x4QVl9PRKBECiBGSYFvVpH3PtQ=
+			58qLreuOHVSUr6mLby4hrI+lRS3jErk18hRFjmaNJKs=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-macos.abi.json</key>
@@ -52,7 +52,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			THbK8uHN7C8iDqIbBvyxgmpzOt9ReBRxnb/3PJf+Cgo=
+			ZBqA45jKd+7OEZgyVVQ4oKz2CKZsU96HPJR5gzm31+o=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-macos.swiftdoc</key>
@@ -66,14 +66,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			THbK8uHN7C8iDqIbBvyxgmpzOt9ReBRxnb/3PJf+Cgo=
+			ZBqA45jKd+7OEZgyVVQ4oKz2CKZsU96HPJR5gzm31+o=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AymHg1okYk9dJZAN2rMd2u8xePRL2Rn+Yd1j2Kkcdl4=
+			CloZiryAwPhYxT9pRSvPV4WW1yApDiOJbqt2wbLjITo=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-macos.abi.json</key>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5MTlURnHIgNZTy8uez1is1Yl99MpJ+YCDexf6iadpmk=
+			cWG/c8AsIngLKBjD0fhIT+iZYYXx/T8u23oSEVKL2Do=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-macos.swiftdoc</key>
@@ -101,14 +101,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5MTlURnHIgNZTy8uez1is1Yl99MpJ+YCDexf6iadpmk=
+			cWG/c8AsIngLKBjD0fhIT+iZYYXx/T8u23oSEVKL2Do=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b9KAtSG9/i88fI65YK2qqeZAojdqhJ8wL/E6zlCGJGI=
+			gQ0f86LRH4WM9Fo/vfZL/4cGxjtR6H57RBZAGgqHLdY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sV5h4XB1DqFkyIW6WlwywyPRmQnxsnD+u9ums9IdW1s=
+			Zj+3gpb6D4yql2mpm4wspy1Q9FNbiekRsY7wQo3qWAw=
 			</data>
 		</dict>
 		<key>Resources/en.lproj/Localizable.strings</key>
