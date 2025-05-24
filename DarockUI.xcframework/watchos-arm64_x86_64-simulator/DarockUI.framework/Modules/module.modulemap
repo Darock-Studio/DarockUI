@@ -1,6 +1,0 @@
-framework module DarockUI {
-  umbrella header "DarockUI.h"
-  export *
-
-  module * { export * }
-}
