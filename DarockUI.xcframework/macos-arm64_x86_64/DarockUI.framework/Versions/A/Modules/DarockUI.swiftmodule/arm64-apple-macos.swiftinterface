@@ -261,6 +261,303 @@ extension Swift.String : Swift.Identifiable {
   public typealias ID = Swift.String
 }
 #endif
+@available(macOS 13.0, *)
+@available(iOS, unavailable)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)
+@available(visionOS, unavailable)
+extension SwiftUI.MenuBarExtra where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, isInserted: SwiftUICore.Binding<Swift.Bool>, @SwiftUICore.ViewBuilder content: () -> Content)
+  @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, isInserted: SwiftUICore.Binding<Swift.Bool>, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol
+  nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content)
+  @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol
+}
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+extension SwiftUI.Toggle where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_alwaysEmitIntoClient nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, isOn: SwiftUICore.Binding<Swift.Bool>) {
+        self.init(isOn: isOn) {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @_alwaysEmitIntoClient @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, isOn: SwiftUICore.Binding<Swift.Bool>) where S : Swift.StringProtocol {
+        self.init(isOn: isOn) {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+  @_alwaysEmitIntoClient nonisolated public init<C>(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, sources: C, isOn: Swift.KeyPath<C.Element, SwiftUICore.Binding<Swift.Bool>>) where C : Swift.RandomAccessCollection {
+        self.init(sources: sources, isOn: isOn) {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+  @_alwaysEmitIntoClient @_disfavoredOverload nonisolated public init<S, C>(_ title: S, internalSystemImage: Swift.String, sources: C, isOn: Swift.KeyPath<C.Element, SwiftUICore.Binding<Swift.Bool>>) where S : Swift.StringProtocol, C : Swift.RandomAccessCollection {
+        self.init(sources: sources, isOn: isOn) {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+}
+@available(iOS, unavailable)
+@available(macOS, unavailable)
+extension DarockUI.Menu where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_alwaysEmitIntoClient @_Concurrency.MainActor @preconcurrency public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content) {
+        self.init {
+            content()
+        } label: {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @_alwaysEmitIntoClient @_disfavoredOverload @_Concurrency.MainActor @preconcurrency public init<S>(_ title: S, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol {
+        self.init {
+            content()
+        } label: {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+}
+@available(iOS 14.0, macOS 11.0, tvOS 17.0, *)
+@available(watchOS, unavailable)
+extension SwiftUI.Menu where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_alwaysEmitIntoClient nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content) {
+        self.init {
+            content()
+        } label: {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @_alwaysEmitIntoClient @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol {
+        self.init {
+            content()
+        } label: {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @available(iOS 15.0, macOS 12.0, tvOS 17.0, *)
+  @available(watchOS, unavailable)
+  @_alwaysEmitIntoClient nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content, primaryAction: @escaping () -> Swift.Void) {
+        self.init {
+            content()
+        } label: {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        } primaryAction: {
+            primaryAction()
+        }
+    }
+}
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+extension SwiftUI.Picker where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_alwaysEmitIntoClient nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, selection: SwiftUICore.Binding<SelectionValue>, @SwiftUICore.ViewBuilder content: () -> Content) {
+        self.init(selection: selection, content: content) {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+  @_alwaysEmitIntoClient nonisolated public init<C>(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, sources: C, selection: Swift.KeyPath<C.Element, SwiftUICore.Binding<SelectionValue>>, @SwiftUICore.ViewBuilder content: () -> Content) where C : Swift.RandomAccessCollection, C.Element == SwiftUICore.Binding<SelectionValue> {
+        self.init(sources: sources, selection: selection) {
+            content()
+        } label: {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @_alwaysEmitIntoClient @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, selection: SwiftUICore.Binding<SelectionValue>, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol {
+        self.init(selection: selection) {
+            content()
+        } label: {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+  @_alwaysEmitIntoClient @_disfavoredOverload nonisolated public init<C, S>(_ title: S, internalSystemImage: Swift.String, sources: C, selection: Swift.KeyPath<C.Element, SwiftUICore.Binding<SelectionValue>>, @SwiftUICore.ViewBuilder content: () -> Content) where C : Swift.RandomAccessCollection, S : Swift.StringProtocol, C.Element == SwiftUICore.Binding<SelectionValue> {
+        self.init(sources: sources, selection: selection) {
+            content()
+        } label: {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+}
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+extension SwiftUI.Picker where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_alwaysEmitIntoClient nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, selection: SwiftUICore.Binding<SelectionValue>, @SwiftUICore.ViewBuilder content: () -> Content, @SwiftUICore.ViewBuilder currentValueLabel: () -> some View) {
+        self.init(selection: selection, content: content, label: {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }, currentValueLabel: currentValueLabel)
+    }
+  @_alwaysEmitIntoClient nonisolated public init<C>(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, sources: C, selection: Swift.KeyPath<C.Element, SwiftUICore.Binding<SelectionValue>>, @SwiftUICore.ViewBuilder content: () -> Content, @SwiftUICore.ViewBuilder currentValueLabel: () -> some View) where C : Swift.RandomAccessCollection, C.Element == SwiftUICore.Binding<SelectionValue> {
+        self.init(sources: sources, selection: selection, content: content, label: {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }, currentValueLabel: currentValueLabel)
+    }
+  @_alwaysEmitIntoClient @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, selection: SwiftUICore.Binding<SelectionValue>, @SwiftUICore.ViewBuilder content: () -> Content, @SwiftUICore.ViewBuilder currentValueLabel: () -> some View) where S : Swift.StringProtocol {
+        self.init(selection: selection, content: content, label: {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }, currentValueLabel: currentValueLabel)
+    }
+  @_alwaysEmitIntoClient @_disfavoredOverload nonisolated public init<C, S>(_ title: S, internalSystemImage: Swift.String, sources: C, selection: Swift.KeyPath<C.Element, SwiftUICore.Binding<SelectionValue>>, @SwiftUICore.ViewBuilder content: () -> Content, @SwiftUICore.ViewBuilder currentValueLabel: () -> some View) where C : Swift.RandomAccessCollection, S : Swift.StringProtocol, C.Element == SwiftUICore.Binding<SelectionValue> {
+        self.init(sources: sources, selection: selection, content: content, label: {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }, currentValueLabel: currentValueLabel)
+    }
+}
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+extension SwiftUI.Tab where Value : Swift.Hashable, Content : SwiftUICore.View, Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, value: Value, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol
+  @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, value: Value, role: SwiftUI.TabRole?, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol
+  @_disfavoredOverload nonisolated public init<S, T>(_ title: S, internalSystemImage: Swift.String, value: T, @SwiftUICore.ViewBuilder content: () -> Content) where Value == T?, S : Swift.StringProtocol, T : Swift.Hashable
+  @_disfavoredOverload nonisolated public init<S, T>(_ title: S, internalSystemImage: Swift.String, value: T, role: SwiftUI.TabRole?, @SwiftUICore.ViewBuilder content: () -> Content) where Value == T?, S : Swift.StringProtocol, T : Swift.Hashable
+  nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, value: Value, @SwiftUICore.ViewBuilder content: () -> Content)
+  nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, value: Value, role: SwiftUI.TabRole?, @SwiftUICore.ViewBuilder content: () -> Content)
+  nonisolated public init<T>(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, value: T, @SwiftUICore.ViewBuilder content: () -> Content) where Value == T?, T : Swift.Hashable
+  nonisolated public init<T>(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, value: T, role: SwiftUI.TabRole?, @SwiftUICore.ViewBuilder content: () -> Content) where Value == T?, T : Swift.Hashable
+}
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+extension SwiftUI.Tab where Value == Swift.Never, Content : SwiftUICore.View, Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_disfavoredOverload public init<S>(_ title: S, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol
+  @_disfavoredOverload public init<S>(_ title: S, internalSystemImage: Swift.String, role: SwiftUI.TabRole?, @SwiftUICore.ViewBuilder content: () -> Content) where S : Swift.StringProtocol
+  public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> Content)
+  public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, role: SwiftUI.TabRole?, @SwiftUICore.ViewBuilder content: () -> Content)
+}
+@available(iOS 16.0, macOS 13.0, tvOS 17.0, *)
+@available(watchOS, unavailable)
+extension SwiftUI.ControlGroup {
+  @_alwaysEmitIntoClient nonisolated public init<C>(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> C) where Content == SwiftUI.LabeledControlGroupContent<C, SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image>>, C : SwiftUICore.View {
+        self.init(content: content) {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @_alwaysEmitIntoClient @_disfavoredOverload nonisolated public init<C, S>(_ title: S, internalSystemImage: Swift.String, @SwiftUICore.ViewBuilder content: () -> C) where Content == SwiftUI.LabeledControlGroupContent<C, SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image>>, C : SwiftUICore.View, S : Swift.StringProtocol {
+        self.init(content: content) {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+}
+@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
+extension SwiftUI.ContentUnavailableView where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image>, Description == SwiftUICore.Text?, Actions == SwiftUICore.EmptyView {
+  nonisolated public init(_ title: SwiftUICore.LocalizedStringKey, internalSystemImage name: Swift.String, description: SwiftUICore.Text? = nil)
+  @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage name: Swift.String, description: SwiftUICore.Text? = nil) where S : Swift.StringProtocol
+}
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+extension SwiftUI.Button where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_alwaysEmitIntoClient nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, action: @escaping @_Concurrency.MainActor () -> Swift.Void) {
+        self.init(action: action) {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @_disfavoredOverload @_alwaysEmitIntoClient nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, action: @escaping @_Concurrency.MainActor () -> Swift.Void) where S : Swift.StringProtocol {
+        self.init(action: action) {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+}
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+extension SwiftUI.Button where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Image> {
+  @_alwaysEmitIntoClient nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage: Swift.String, role: SwiftUI.ButtonRole?, action: @escaping @_Concurrency.MainActor () -> Swift.Void) {
+        self.init(role: role, action: action) {
+            Label {
+                Text(titleKey)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+  @_alwaysEmitIntoClient @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage: Swift.String, role: SwiftUI.ButtonRole?, action: @escaping @_Concurrency.MainActor () -> Swift.Void) where S : Swift.StringProtocol {
+        self.init(role: role, action: action) {
+            Label {
+                Text(title)
+            } icon: {
+                Image(_internalSystemName: internalSystemImage)
+            }
+        }
+    }
+}
+@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+extension SwiftUI.Label where Title == SwiftUICore.Text, Icon == SwiftUICore.Image {
+  nonisolated public init(_ titleKey: SwiftUICore.LocalizedStringKey, internalSystemImage name: Swift.String)
+  @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage name: Swift.String) where S : Swift.StringProtocol
+}
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func wrapIf(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder in container: (Self) -> some View) -> some SwiftUICore.View
   
