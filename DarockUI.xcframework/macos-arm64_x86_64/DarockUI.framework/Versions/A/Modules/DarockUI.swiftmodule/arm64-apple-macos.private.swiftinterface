@@ -1,10 +1,15 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-macos13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DarockUI
+@_exported import CoreGraphics
+@_exported import CoreTransferable
 @_exported import DarockUI
+@_exported import DeveloperToolsSupport
 import Foundation
+import OSLog
 import Swift
-import SwiftUI
+@_exported import SwiftUI
+@_exported import SwiftUICore
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -261,6 +266,28 @@ extension Swift.String : Swift.Identifiable {
   public typealias ID = Swift.String
 }
 #endif
+extension SwiftUICore.View {
+  @available(*, deprecated, renamed: "_onButtonGesture", message: "'onPressChange' has deprecated. Use '_onButtonGesture' built in SwiftUI instead.")
+  @_Concurrency.MainActor @preconcurrency public func onPressChange(_ action: @escaping (Swift.Bool) -> Swift.Void) -> some SwiftUICore.View
+  
+}
+@available(*, deprecated, message: "'ButtonStyleForPressAction' has deprecated. Use '_onButtonGesture' built in SwiftUI with View instead.")
+@_Concurrency.MainActor @preconcurrency public struct ButtonStyleForPressAction : SwiftUI.ButtonStyle {
+  @_Concurrency.MainActor @preconcurrency public init(pressAction: @escaping (Swift.Bool) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func makeBody(configuration: DarockUI.ButtonStyleForPressAction.Configuration) -> some SwiftUICore.View
+  
+  @available(*, deprecated, message: "'ButtonStyleForPressAction' has deprecated. Use '_onButtonGesture' built in SwiftUI with View instead.")
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI25ButtonStyleForPressActionV8makeBody13configurationQr05SwiftB00cD13ConfigurationV_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct WebView : SwiftUI.NSViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL, builder: @escaping (WebKit.WKWebView) -> WebKit.WKWebView)
+  @_Concurrency.MainActor @preconcurrency public func makeNSView(context: DarockUI.WebView.Context) -> WebKit.WKWebView
+  @_Concurrency.MainActor @preconcurrency public func updateNSView(_ nsView: WebKit.WKWebView, context: DarockUI.WebView.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias NSViewType = WebKit.WKWebView
+}
 @available(macOS 13.0, *)
 @available(iOS, unavailable)
 @available(tvOS, unavailable)
@@ -559,6 +586,10 @@ extension SwiftUI.Label where Title == SwiftUICore.Text, Icon == SwiftUICore.Ima
   @_disfavoredOverload nonisolated public init<S>(_ title: S, internalSystemImage name: Swift.String) where S : Swift.StringProtocol
 }
 extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func reversedMask<Mask>(alignment: SwiftUICore.Alignment = .center, @SwiftUICore.ViewBuilder _ mask: () -> Mask) -> some SwiftUICore.View where Mask : SwiftUICore.View
+  
+}
+extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func wrapIf(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder in container: (Self) -> some View) -> some SwiftUICore.View
   
   @_Concurrency.MainActor @preconcurrency public func wrapIf(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder in container: (Self) -> some View, @SwiftUICore.ViewBuilder else elseContainer: (Self) -> some View) -> some SwiftUICore.View
@@ -566,6 +597,37 @@ extension SwiftUICore.View {
 }
 public func ifContainer<T, U, V>(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder true trueContainer: @escaping (SwiftUICore.AnyView) -> T, @SwiftUICore.ViewBuilder false falseContainer: @escaping (SwiftUICore.AnyView) -> U, @SwiftUICore.ViewBuilder containing containingView: @escaping () -> V) -> some SwiftUICore.View where T : SwiftUICore.View, U : SwiftUICore.View, V : SwiftUICore.View
 
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func centerAligned() -> some SwiftUICore.View
+  
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func noAutoInput() -> some SwiftUICore.View
+  
+}
+extension SwiftUICore.Binding {
+  public func onUpdate(_ closure: @escaping () -> Swift.Void) -> SwiftUICore.Binding<Value>
+  public func onUpdate(_ closure: @escaping (_ oldValue: Value, _ newValue: Value) -> Swift.Void) -> SwiftUICore.Binding<Value>
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func border<S>(_ content: S, width: CoreFoundation.CGFloat = 1, cornerRadius: CoreFoundation.CGFloat) -> some SwiftUICore.View where S : SwiftUICore.ShapeStyle
+  
+}
+extension SwiftUI.ScrollView {
+  public func withScrollOffsetUpdate() -> some SwiftUICore.View
+  
+}
+public struct ScrollViewOffsetPreferenceKey : SwiftUICore.PreferenceKey {
+  public static var defaultValue: CoreFoundation.CGFloat
+  public static func reduce(value: inout CoreFoundation.CGFloat, nextValue: () -> CoreFoundation.CGFloat)
+  public typealias Value = CoreFoundation.CGFloat
+}
+@_Concurrency.MainActor @preconcurrency public struct Zoomable : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func body(content: DarockUI.Zoomable.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI8ZoomableV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
+}
 @_Concurrency.MainActor @preconcurrency public struct DelayedProgressView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(delayInterval interval: Foundation.TimeInterval = 3)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -657,75 +719,41 @@ extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func contextMenu<M, P>(@SwiftUICore.ViewBuilder menuItems: @escaping () -> M, @SwiftUICore.ViewBuilder preview: () -> P) -> some SwiftUICore.View where M : SwiftUICore.View, P : SwiftUICore.View
   
 }
-@_spi(_Internal) @available(watchOS 7.0, *)
+@_spi(_internal) @available(watchOS 7.0, *)
 @available(iOS, unavailable)
 @available(macOS, unavailable)
 @_Concurrency.MainActor @preconcurrency public struct _WatchContextMenuModifier<MenuItems> : SwiftUICore.ViewModifier where MenuItems : SwiftUICore.View {
-  @_spi(_Internal) @_Concurrency.MainActor @preconcurrency public init(@SwiftUICore.ViewBuilder menuItems: @escaping () -> MenuItems)
-  @_spi(_Internal) @_Concurrency.MainActor @preconcurrency public func body(content: DarockUI._WatchContextMenuModifier<MenuItems>.Content) -> some SwiftUICore.View
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public init(@SwiftUICore.ViewBuilder menuItems: @escaping () -> MenuItems)
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public func body(content: DarockUI._WatchContextMenuModifier<MenuItems>.Content) -> some SwiftUICore.View
   
-  @_spi(_Internal) @available(watchOS 7.0, *)
+  @_spi(_internal) @available(watchOS 7.0, *)
   @available(iOS, unavailable)
   @available(macOS, unavailable)
   public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI25_WatchContextMenuModifierV4body7contentQr05SwiftB005_ViewF8_ContentVyACyxGG_tF", 0) __<MenuItems>
 }
 extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func centerAligned() -> some SwiftUICore.View
-  
-}
-extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func noAutoInput() -> some SwiftUICore.View
-  
-}
-@_Concurrency.MainActor @preconcurrency public struct Zoomable : SwiftUICore.ViewModifier {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public func body(content: DarockUI.Zoomable.Content) -> some SwiftUICore.View
-  
-  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI8ZoomableV4body7contentQr05SwiftB021_ViewModifier_ContentVyACG_tF", 0) __
-}
-@_Concurrency.MainActor @preconcurrency public struct WebView : SwiftUI.NSViewRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL)
-  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL, builder: @escaping (WebKit.WKWebView) -> WebKit.WKWebView)
-  @_Concurrency.MainActor @preconcurrency public func makeNSView(context: DarockUI.WebView.Context) -> WebKit.WKWebView
-  @_Concurrency.MainActor @preconcurrency public func updateNSView(_ nsView: WebKit.WKWebView, context: DarockUI.WebView.Context)
-  public typealias Body = Swift.Never
-  public typealias Coordinator = Swift.Void
-  public typealias NSViewType = WebKit.WKWebView
-}
-extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func onPressChange(_ action: @escaping (Swift.Bool) -> Swift.Void) -> some SwiftUICore.View
-  
-}
-@_Concurrency.MainActor @preconcurrency public struct ButtonStyleForPressAction : SwiftUI.ButtonStyle {
-  @_Concurrency.MainActor @preconcurrency public init(pressAction: @escaping (Swift.Bool) -> Swift.Void)
-  @_Concurrency.MainActor @preconcurrency public func makeBody(configuration: DarockUI.ButtonStyleForPressAction.Configuration) -> some SwiftUICore.View
-  
-  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI25ButtonStyleForPressActionV8makeBody13configurationQr05SwiftB00cD13ConfigurationV_tF", 0) __
-}
-extension SwiftUICore.Binding {
-  public func onUpdate(_ closure: @escaping () -> Swift.Void) -> SwiftUICore.Binding<Value>
-  public func onUpdate(_ closure: @escaping (_ oldValue: Value, _ newValue: Value) -> Swift.Void) -> SwiftUICore.Binding<Value>
-}
-extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func border<S>(_ content: S, width: CoreFoundation.CGFloat = 1, cornerRadius: CoreFoundation.CGFloat) -> some SwiftUICore.View where S : SwiftUICore.ShapeStyle
-  
-}
-extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func withDismissButton(_ action: @escaping () -> Swift.Void, placement: SwiftUICore.HorizontalAlignment = .trailing) -> some SwiftUICore.View
   
 }
-extension SwiftUI.ScrollView {
-  public func withScrollOffsetUpdate() -> some SwiftUICore.View
-  
+@available(watchOS, unavailable)
+@_Concurrency.MainActor @preconcurrency public struct TextSelectView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(text: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(watchOS, unavailable)
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI14TextSelectViewV4bodyQrvp", 0) __
 }
-public struct ScrollViewOffsetPreferenceKey : SwiftUICore.PreferenceKey {
-  public static var defaultValue: CoreFoundation.CGFloat
-  public static func reduce(value: inout CoreFoundation.CGFloat, nextValue: () -> CoreFoundation.CGFloat)
-  public typealias Value = CoreFoundation.CGFloat
-}
-extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func reversedMask<Mask>(alignment: SwiftUICore.Alignment = .center, @SwiftUICore.ViewBuilder _ mask: () -> Mask) -> some SwiftUICore.View where Mask : SwiftUICore.View
-  
+@available(watchOS, unavailable)
+@available(macOS, unavailable)
+@_Concurrency.MainActor @preconcurrency public struct CopyableView<V> : SwiftUICore.View where V : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(_ content: Swift.String, allowSelect: Swift.Bool = true, view: @escaping () -> V)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(watchOS, unavailable)
+  @available(macOS, unavailable)
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI12CopyableViewV4bodyQrvp", 0) __<V>
 }
 extension DarockUI.NeumorphicKit.ColorSchemeType : Swift.Equatable {}
 extension DarockUI.NeumorphicKit.ColorSchemeType : Swift.Hashable {}
@@ -736,12 +764,18 @@ extension DarockUI.SoftDynamicButtonStyle : Swift.Sendable {}
 extension DarockUI.SoftButtonStyle : Swift.Sendable {}
 extension DarockUI.SoftDynamicToggleStyle : Swift.Sendable {}
 extension DarockUI.SoftSwitchToggleStyle : Swift.Sendable {}
+@available(*, deprecated, message: "'ButtonStyleForPressAction' has deprecated. Use '_onButtonGesture' built in SwiftUI with View instead.")
+extension DarockUI.ButtonStyleForPressAction : Swift.Sendable {}
+extension DarockUI.WebView : Swift.Sendable {}
+extension DarockUI.Zoomable : Swift.Sendable {}
 extension DarockUI.DelayedProgressView : Swift.Sendable {}
 extension DarockUI._InitialAppearModifier : Swift.Sendable {}
-@_spi(_Internal) @available(watchOS 7.0, *)
+@_spi(_internal) @available(watchOS 7.0, *)
 @available(iOS, unavailable)
 @available(macOS, unavailable)
 extension DarockUI._WatchContextMenuModifier : Swift.Sendable {}
-extension DarockUI.Zoomable : Swift.Sendable {}
-extension DarockUI.WebView : Swift.Sendable {}
-extension DarockUI.ButtonStyleForPressAction : Swift.Sendable {}
+@available(watchOS, unavailable)
+extension DarockUI.TextSelectView : Swift.Sendable {}
+@available(watchOS, unavailable)
+@available(macOS, unavailable)
+extension DarockUI.CopyableView : Swift.Sendable {}

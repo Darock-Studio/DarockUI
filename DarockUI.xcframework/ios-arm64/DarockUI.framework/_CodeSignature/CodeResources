@@ -6,7 +6,7 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		VKmDTcXMo/B23qar6qUkbIQ8iNg=
+		XSQYS4EIo0w7e36koNAqV4s4568=
 		</data>
 		<key>Headers/DarockUI.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		w3R4lCPei8GqCNUH227Ne9edN8I=
+		AjndkINOXjmVztixQscifrU6I64=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		oisdjuFVjbsOVUunYkY+mSSFuLo=
+		0u3GKaQ41D+tO0W2d+uE2VOzXoc=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		4GlSpCNrLUEm3gNagZYGdoVd7X0=
+		VsbOIQ0NKuw7DSuGBgkFjMx4PE0=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/1N0LlSK6BlwidECcoDZpr1yt8o=
+		ZizHr+gsQuSjjjGPxVfEJBl6PPE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hq7ISONiPvGe4MgmSSCfdr4rK5uPGd5qGuccTJs1HvY=
+			wepMxFykO93H7+r/GcDbiUBqgoWIkZJYY44s8CiICJQ=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kx4h8/wTfXxmBCK2dv17ah9tbAAV6Og5caS6h1bgeBc=
+			0B3GjOEL/+gSBv8kpaIhwEy7nbfYa+ivAAoa1evRYQo=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -95,14 +95,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JTfZBCvesMaCElNiT9T66uLcD2CjVjQ+wTmrFy6wk4w=
+			umjXRFhuULlfcsT0hKU5fgU5K/4ULDz0vb7TSii2N2g=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ijNYlJrIvD5qQo8Kc6jDnDwykNvholMNL0DDd3fK9NQ=
+			DDlLVf1Tfr6ydr+g+h60Vt0XV/wPzxDyE8XJAcxXH04=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
