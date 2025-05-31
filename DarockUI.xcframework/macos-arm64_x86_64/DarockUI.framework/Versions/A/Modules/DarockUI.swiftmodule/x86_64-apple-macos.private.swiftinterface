@@ -266,6 +266,45 @@ extension Swift.String : Swift.Identifiable {
   public typealias ID = Swift.String
 }
 #endif
+@_spi(_internal) @available(iOS, unavailable)
+@available(macOS, unavailable)
+@_Concurrency.MainActor @preconcurrency public struct _SomeClassifyView : SwiftUICore.View {
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public init(_ sourceClassName: Swift.String, instantiate: ((ObjectiveC.NSObject.Type) -> ObjectiveC.NSObject)? = nil, configurate: (ObjectiveC.NSObject) -> Swift.Void = { _ in })
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public var underlyingClassifyView: ObjectiveC.NSObject? {
+    @_spi(_internal) get
+  }
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    @_spi(_internal) get
+  }
+  @_spi(_internal) @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI17_SomeClassifyViewV4bodyQrvp", 0) __
+}
+@_spi(_internal) @available(iOS, unavailable)
+@available(macOS, unavailable)
+@_Concurrency.MainActor @preconcurrency public struct _SomeClassifyViewController : SwiftUICore.View {
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public init(_ sourceClassName: Swift.String, instantiate: ((ObjectiveC.NSObject.Type) -> ObjectiveC.NSObject)? = nil, configurate: (ObjectiveC.NSObject) -> Swift.Void = { _ in })
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public var underlyingClassifyViewController: ObjectiveC.NSObject? {
+    @_spi(_internal) get
+  }
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    @_spi(_internal) get
+  }
+  @_spi(_internal) @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI27_SomeClassifyViewControllerV4bodyQrvp", 0) __
+}
+extension SwiftUICore.View {
+  @_spi(_internal) @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @_Concurrency.MainActor @preconcurrency public func _classifyView() -> ObjectiveC.NSObject
+  @_spi(_internal) @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @_Concurrency.MainActor @preconcurrency public func _classifyViewController() -> ObjectiveC.NSObject
+  @_spi(_internal) @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @_Concurrency.MainActor @preconcurrency public func _classifyViewController(tracksContentSize: Swift.Bool, secure: Swift.Bool = false) -> ObjectiveC.NSObject
+}
 extension SwiftUICore.View {
   @available(*, deprecated, renamed: "_onButtonGesture", message: "'onPressChange' has deprecated. Use '_onButtonGesture' built in SwiftUI instead.")
   @_Concurrency.MainActor @preconcurrency public func onPressChange(_ action: @escaping (Swift.Bool) -> Swift.Void) -> some SwiftUICore.View
@@ -589,6 +628,53 @@ extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func reversedMask<Mask>(alignment: SwiftUICore.Alignment = .center, @SwiftUICore.ViewBuilder _ mask: () -> Mask) -> some SwiftUICore.View where Mask : SwiftUICore.View
   
 }
+@_spi(_internal) public protocol _ViewTraitKey {
+  associatedtype Value
+  @_spi(_internal) static var defaultValue: Self.Value { get }
+}
+@_spi(_internal) @frozen @_Concurrency.MainActor @preconcurrency public struct _TraitWritingModifier<Trait> : SwiftUICore.ViewModifier where Trait : DarockUI._ViewTraitKey {
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public let value: Trait.Value
+  @_spi(_internal) @inlinable @_Concurrency.MainActor @preconcurrency public init(value: Trait.Value) {
+        self.value = value
+    }
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency private var _superTrait: SwiftUICore.Environment<[(Any?, (any Any.Type)?)]>
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public func body(content: DarockUI._TraitWritingModifier<Trait>.Content) -> some SwiftUICore.View
+  
+  @_spi(_internal) public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI21_TraitWritingModifierV4body7contentQr05SwiftB005_ViewE8_ContentVyACyxGG_tF", 0) __<Trait>
+}
+@_spi(_internal) @available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+@frozen @_Concurrency.MainActor @preconcurrency public struct _ConditionalTraitWritingModifier<Trait> : SwiftUICore.ViewModifier where Trait : DarockUI._ViewTraitKey {
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public var value: Trait.Value
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public var isEnabled: Swift.Bool
+  @_spi(_internal) @_alwaysEmitIntoClient @_Concurrency.MainActor @preconcurrency public init(traitKey: Trait.Type = Trait.self, value: Trait.Value, isEnabled: Swift.Bool) {
+        self.value = value
+        self.isEnabled = isEnabled
+    }
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public func body(content: DarockUI._ConditionalTraitWritingModifier<Trait>.Content) -> some SwiftUICore.View
+  
+  @_spi(_internal) @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI32_ConditionalTraitWritingModifierV4body7contentQr05SwiftB005_ViewF8_ContentVyACyxGG_tF", 0) __<Trait>
+}
+extension SwiftUICore.EnvironmentValues {
+  @usableFromInline
+  internal var trait: [(Any?, (any Any.Type)?)] {
+    get
+    set
+  }
+}
+extension SwiftUICore.View {
+  @_spi(_internal) @inlinable @_Concurrency.MainActor @preconcurrency public func _trait<K>(_ key: K.Type, _ value: K.Value) -> some SwiftUICore.View where K : DarockUI._ViewTraitKey {
+        return modifier(_TraitWritingModifier<K>(value: value))
+    }
+  
+}
+@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+extension SwiftUICore.View {
+  @_spi(_internal) @_alwaysEmitIntoClient @_Concurrency.MainActor public func _trait<K>(_ key: K.Type = K.self, _ value: K.Value, isEnabled: Swift.Bool) -> some SwiftUICore.View where K : DarockUI._ViewTraitKey {
+        modifier(_ConditionalTraitWritingModifier<K>(value: value, isEnabled: isEnabled))
+    }
+  
+}
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func wrapIf(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder in container: (Self) -> some View) -> some SwiftUICore.View
   
@@ -764,9 +850,18 @@ extension DarockUI.SoftDynamicButtonStyle : Swift.Sendable {}
 extension DarockUI.SoftButtonStyle : Swift.Sendable {}
 extension DarockUI.SoftDynamicToggleStyle : Swift.Sendable {}
 extension DarockUI.SoftSwitchToggleStyle : Swift.Sendable {}
+@_spi(_internal) @available(iOS, unavailable)
+@available(macOS, unavailable)
+extension DarockUI._SomeClassifyView : Swift.Sendable {}
+@_spi(_internal) @available(iOS, unavailable)
+@available(macOS, unavailable)
+extension DarockUI._SomeClassifyViewController : Swift.Sendable {}
 @available(*, deprecated, message: "'ButtonStyleForPressAction' has deprecated. Use '_onButtonGesture' built in SwiftUI with View instead.")
 extension DarockUI.ButtonStyleForPressAction : Swift.Sendable {}
 extension DarockUI.WebView : Swift.Sendable {}
+@_spi(_internal) extension DarockUI._TraitWritingModifier : Swift.Sendable {}
+@_spi(_internal) @available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+extension DarockUI._ConditionalTraitWritingModifier : Swift.Sendable {}
 extension DarockUI.Zoomable : Swift.Sendable {}
 extension DarockUI.DelayedProgressView : Swift.Sendable {}
 extension DarockUI._InitialAppearModifier : Swift.Sendable {}

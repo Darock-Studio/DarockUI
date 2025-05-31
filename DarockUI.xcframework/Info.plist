@@ -22,11 +22,11 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>DarockUI.framework/Versions/A/DarockUI</string>
+			<string>DarockUI.framework/DarockUI</string>
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-maccatalyst</string>
+			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>DarockUI.framework</string>
 			<key>SupportedArchitectures</key>
@@ -37,7 +37,7 @@
 			<key>SupportedPlatform</key>
 			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
-			<string>maccatalyst</string>
+			<string>simulator</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -94,11 +94,11 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>DarockUI.framework/DarockUI</string>
+			<string>DarockUI.framework/Versions/A/DarockUI</string>
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-simulator</string>
+			<string>ios-arm64_x86_64-maccatalyst</string>
 			<key>LibraryPath</key>
 			<string>DarockUI.framework</string>
 			<key>SupportedArchitectures</key>
@@ -109,7 +109,7 @@
 			<key>SupportedPlatform</key>
 			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
-			<string>simulator</string>
+			<string>maccatalyst</string>
 		</dict>
 	</array>
 	<key>CFBundlePackageType</key>

@@ -589,6 +589,13 @@ extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func reversedMask<Mask>(alignment: SwiftUICore.Alignment = .center, @SwiftUICore.ViewBuilder _ mask: () -> Mask) -> some SwiftUICore.View where Mask : SwiftUICore.View
   
 }
+extension SwiftUICore.EnvironmentValues {
+  @usableFromInline
+  internal var trait: [(Any?, (any Any.Type)?)] {
+    get
+    set
+  }
+}
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func wrapIf(_ condition: Swift.Bool, @SwiftUICore.ViewBuilder in container: (Self) -> some View) -> some SwiftUICore.View
   

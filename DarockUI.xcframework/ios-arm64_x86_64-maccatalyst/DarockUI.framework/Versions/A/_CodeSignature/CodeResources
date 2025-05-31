@@ -12,7 +12,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RGWC+lDyaKcLcQpx/+ElugopgTY=
+			2klOwsCDTzpjvQLtYg5Xufzxvok=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -31,14 +31,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjGwaVYPNhqQj8uf50RZmerPDvYfp4+d6moZ4Ai3C7Y=
+			kStDW3yJ0K/85H/ApEFt9kTTwx6/nQ9I43Xuj6dWjYM=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/Project/x86_64-apple-ios-macabi.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jAVWsEm8nj1rIbOn4R99ynecWkme/frpsW4CiniKOp8=
+			LrwpYw6J0AUtEHsLKDKFDFmdl+3lKYW20T3sFXQfMbI=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
@@ -52,7 +52,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vhZgFFRG2JQiTdSpnN824me0u/g6VvW2X4vKA9Tz5K4=
+			jHqvB14LwLndXHckJIL+sgJEekWxpVST9PSSoG1qm0Y=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
@@ -66,14 +66,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S+hbtK6t9lnn4/gMAwubsMjAV7XTlSEvbQUAlB6mO08=
+			iHxmWBrZRRf3zFM3qAOR3CRjvzXhw8+79Mx1Vps0w9s=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G4eUiZg1ZMceH6soUX9LCbmO+8Q66YjeKNlsTnWTUTs=
+			Rhue/AYEtmG40gRsdcM60/8Oh3mjD75V14SSkvgJJyM=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k/CfmJGGOeS5mnTjH1iKPqwfKq2pVG1GOS81M+UTEoU=
+			6XKtrollPWfMUD19Oi33pmOSWoS82w8m3bTgMsHOusQ=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -101,14 +101,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Dfp1bebiTumAqNvXwGEGXcln4YlrqF0JsDAkmKNQe8=
+			8H+ZCNvBmF9o6CafRAm3T+FQc3nG7ZlU1qc+x0jOG48=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YLEujbu0UlysK/QApnYTQsgR2+2qOr717DcavMGvRPA=
+			UMSUIbwnlrrZX3boNk/0qJwFkSfyZPLJyf2oLqiZG/o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CrNXK1QnwLuKB3pqftTwHpIqnQvXfesN2zfVNioPwIo=
+			DG4KKGNZZz/XkCH/pqH0wXZrOrYQHyncgTbq7DvSNT4=
 			</data>
 			<key>optional</key>
 			<true/>

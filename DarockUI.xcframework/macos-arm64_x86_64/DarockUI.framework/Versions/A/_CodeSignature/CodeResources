@@ -12,7 +12,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RGWC+lDyaKcLcQpx/+ElugopgTY=
+			2klOwsCDTzpjvQLtYg5Xufzxvok=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -31,14 +31,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TQp7DySl9EBfkxr14RJn8L7XIRV1zBt6voelu3FvRic=
+			Gi4fbYdHuhZg0TMHsZRu6V/QrAer4TX5mWp9xGvtDMo=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/Project/x86_64-apple-macos.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FBu+i9kyTwwtYhxANPWyC+wUsDNHlVP+UmAConT2HMc=
+			mDbjHd0SXpSuNi+9ieBbjGLXj7jTNu6Z90+s9xXA7Wo=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-macos.abi.json</key>
@@ -52,7 +52,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rBFpSt3/S7MtVALc3yj1BBDvG2G+ynHbzHg2fkv6M1w=
+			q5+qRmmsd6HmqYC5vhQsE5Xga7pkbKUtXvx0v3ROtnk=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-macos.swiftdoc</key>
@@ -66,14 +66,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QCQGb4tiYwycqEDt0nvh0Tj5D5AXB8FKd6MBwnb+2lQ=
+			zm+7JH+kFEl/wQd8gBni6PVD4Ku5mcNmD3TRESMmdic=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y0j7QHEOEmD9pQOFtPwFPB32yndNGHlhiBSjkJYKb6U=
+			ATsUebmSaMDnIJrlyf4UnCCl7wFXqDhnxyrnkvt/h5w=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-macos.abi.json</key>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HSkbodFJWF6tMWLtfriMNpRCrGBvOoSYYFjC6Lu9FEI=
+			CQWj6Z5O3Qj+3r7zxCgcay4QSHBMnncVsjhFYn35ezE=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-macos.swiftdoc</key>
@@ -101,14 +101,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5DosYFk4l8qaN7DQ/19hdZeCVGC8hHNnLhFvCzkm6TU=
+			wr6DdNiCc9kc/rOyd2rvYDAbq3O8bmjq2n75TeCMWFI=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FoZ9q3KxnjxjmjyLTBqe1ko/hp94E3m5Wyly5cZYHto=
+			0AemXiq0N60KRw8068NNnbThc7pdtAZAB8jvpn0hAEY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CrNXK1QnwLuKB3pqftTwHpIqnQvXfesN2zfVNioPwIo=
+			DG4KKGNZZz/XkCH/pqH0wXZrOrYQHyncgTbq7DvSNT4=
 			</data>
 			<key>optional</key>
 			<true/>
