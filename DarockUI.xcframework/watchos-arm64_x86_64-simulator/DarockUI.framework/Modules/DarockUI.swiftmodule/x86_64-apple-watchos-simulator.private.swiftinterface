@@ -630,9 +630,7 @@ extension SwiftUICore.View {
 }
 @_spi(_internal) @frozen @_Concurrency.MainActor @preconcurrency public struct _TraitWritingModifier<Trait> : SwiftUICore.ViewModifier where Trait : DarockUI._ViewTraitKey {
   @_spi(_internal) @_Concurrency.MainActor @preconcurrency public let value: Trait.Value
-  @_spi(_internal) @inlinable @_Concurrency.MainActor @preconcurrency public init(value: Trait.Value) {
-        self.value = value
-    }
+  @_spi(_internal) @_Concurrency.MainActor @preconcurrency public init(value: Trait.Value)
   @_spi(_internal) @_Concurrency.MainActor @preconcurrency private var _superTrait: SwiftUICore.Environment<[(Any?, (any Any.Type)?)]>
   @_spi(_internal) @_Concurrency.MainActor @preconcurrency public func body(content: DarockUI._TraitWritingModifier<Trait>.Content) -> some SwiftUICore.View
   
