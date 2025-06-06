@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DarockUI
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DarockUI -package-name DarockUI
+import Combine
 @_exported import CoreGraphics
 @_exported import CoreTransferable
 @_exported import DarockUI
@@ -15,6 +16,24 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_Concurrency.MainActor @preconcurrency public struct GeneralUIViewRepresenting : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(_ view: UIKit.UIView)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: DarockUI.GeneralUIViewRepresenting.Context) -> some UIKit.UIView
+  
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: @_opaqueReturnTypeOf("$s8DarockUI25GeneralUIViewRepresentingV04makeD07contextQr05SwiftB00D20RepresentableContextVyACG_tF", 0) __, context: DarockUI.GeneralUIViewRepresenting.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewType = @_opaqueReturnTypeOf("$s8DarockUI25GeneralUIViewRepresentingV04makeD07contextQr05SwiftB00D20RepresentableContextVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct GeneralUIViewControllerRepresenting : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(_ viewController: UIKit.UIViewController)
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: DarockUI.GeneralUIViewControllerRepresenting.Context) -> some UIKit.UIViewController
+  
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: @_opaqueReturnTypeOf("$s8DarockUI35GeneralUIViewControllerRepresentingV04makedE07contextQr05SwiftB00dE20RepresentableContextVyACG_tF", 0) __, context: DarockUI.GeneralUIViewControllerRepresenting.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewControllerType = @_opaqueReturnTypeOf("$s8DarockUI35GeneralUIViewControllerRepresentingV04makedE07contextQr05SwiftB00dE20RepresentableContextVyACG_tF", 0) __
+}
 extension SwiftUICore.Color {
   public struct Neumorphic {
     public static var colorSchemeType: DarockUI.NeumorphicKit.ColorSchemeType {
@@ -325,6 +344,25 @@ public func _presentViewController(_ controller: ObjectiveC.NSObject, on parentC
 @_spi(_internal) @available(macOS, unavailable)
 @available(watchOS, unavailable)
 public func _presentViewController(_ controller: UIKit.UIViewController, on parentController: UIKit.UIViewController? = nil, completion: (Swift.Bool) -> Swift.Void = { _ in })
+@available(watchOS, unavailable)
+extension QuartzCore.CALayer {
+  @discardableResult
+  public func hideFromCapture(hide: Swift.Bool = true) -> Swift.Bool
+}
+extension UIKit.UIView {
+  @discardableResult
+  @_Concurrency.MainActor @preconcurrency public func hideFromCapture(hide: Swift.Bool = true) -> Swift.Bool
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func hideFromCapture(_ hide: Swift.Bool = true) -> SwiftUICore.AnyView
+}
+@usableFromInline
+package enum Log {
+  @usableFromInline
+  package static var runtimeIssuesLog: os.OSLog
+  @usableFromInline
+  package static var internalErrorsLog: os.OSLog
+}
 @_Concurrency.MainActor @preconcurrency public struct WebView : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL)
   @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL, builder: @escaping (WebKit.WKWebView) -> WebKit.WKWebView)
@@ -798,7 +836,7 @@ public protocol AlertIconAnimatable {
   func animate()
 }
 @_Concurrency.MainActor @preconcurrency public struct DelayedProgressView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(delayInterval interval: Foundation.TimeInterval = 3)
+  @_Concurrency.MainActor @preconcurrency public init(delayInterval interval: Foundation.TimeInterval = 1)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -924,6 +962,8 @@ extension SwiftUICore.View {
   @available(macOS, unavailable)
   public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI12CopyableViewV4bodyQrvp", 0) __<V>
 }
+extension DarockUI.GeneralUIViewRepresenting : Swift.Sendable {}
+extension DarockUI.GeneralUIViewControllerRepresenting : Swift.Sendable {}
 extension DarockUI.NeumorphicKit.ColorSchemeType : Swift.Equatable {}
 extension DarockUI.NeumorphicKit.ColorSchemeType : Swift.Hashable {}
 extension DarockUI.SoftButtonPressedEffect : Swift.Equatable {}
