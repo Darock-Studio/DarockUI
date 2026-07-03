@@ -4,21 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		V6i6Z21TJvISIifZL4zNjj8MQzQ=
-		</data>
 		<key>Headers/DarockUI.h</key>
 		<data>
 		IUAE4xryElGULJLcHUOHmlwqcIE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y2ejU0TuYomPy2JgLwkDUowoc/4=
+		ewZeLHcGVbzlLoHHZmeQPTHl3lU=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		JYDjZZ6jlkYXOodynVXVSNopCaY=
+		ZSC3Ixi0V3nh3iWS8wUw0cVSXbA=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -26,19 +22,19 @@
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		2RYUjg9WkFrW4LUT9Bz5ed5c/Jg=
+		XqTkhXin4ZMUAWKXINkU9z1p5Sw=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		h2cxVRC6okdM+x63AgSFt7eruF8=
+		Tov2KKYABjDKOitHL620iHm916o=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		lZiIgH3G5fFHhzi489K//pWsA8c=
+		EZIlUDuHT+D7QW+Rcr0hpZoOwlM=
 		</data>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		WetvXGo9u3CoxXtVK061i8eTp6M=
+		yPqcM2PAtGA8MCCDXXLyqjeOQp0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -48,7 +44,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IgndrhmM0qHBjmTd56Yn5GUmEwo=
+			F7xEu7OP3SghYkoHgZkSLLdMGTQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -67,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B8ZJpwuhIwF91xzKMGIAoT+UfDh2oRRXqYqZhfVQBZI=
+			6xudMSgCQz4nFLx/6LgqKwwTJbXHs9Ob1gYxSLmdKxg=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -81,28 +77,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4EIx/J+BG/Eoe9+X90u+MpYWxhEeKw2fNHY0RSnkAzA=
+			DbuMVa3MKXirrqdNyVT84FC/VY7++Y1JytlrgIi6Asg=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GukgMkqcZDa0cXK/FfschufdoK3Qdw6Fm2uem3IhQEs=
+			geMD+PWeRvYBx5Wy+KenqeWrOLpKwi16rjL10ojrapQ=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FpZygjz1kz+ODUiCYrR0xsBE1VOZt/WIaYqej+qqweo=
+			fiukcpSg8hSdVNZrUpz7uBW8/TwtoGHwCWf3snXrDy8=
 			</data>
 		</dict>
 		<key>Modules/DarockUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TgSnKiCh3eY9ONIVWsBTj0/BJXIg4D5LHIi4Et4A7dw=
+			fK/G6I7xa3gO7fDZz5XiKEzHWL6wmz1gX3h0Mr8VGkc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -116,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V4yHYBljjJC6GxyjWBDDo2hs63prrXpiWS+IbFYKiXw=
+			KnW8Ib7zR/uIQyckR5JzH/H4xCKkrMSzvHnCxIX6ras=
 			</data>
 			<key>optional</key>
 			<true/>

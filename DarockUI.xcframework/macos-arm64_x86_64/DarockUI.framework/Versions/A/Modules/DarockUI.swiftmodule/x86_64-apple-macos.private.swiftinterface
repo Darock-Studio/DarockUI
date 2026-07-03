@@ -1,6 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-macos13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DarockUI -package-name DarockUI
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-macos13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DarockUI -package-name DarockUI
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+import AppKit
 import Combine
 @_exported import CoreGraphics
 @_exported import CoreTransferable
@@ -10,11 +12,11 @@ import Foundation
 import OSLog
 import Swift
 @_exported import SwiftUI
-@_exported import SwiftUICore
 import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import _WebKit_SwiftUI
 @_Concurrency.MainActor @preconcurrency public struct GeneralNSViewRepresenting : SwiftUI.NSViewRepresentable {
   @_Concurrency.MainActor @preconcurrency public init(_ view: AppKit.NSView)
   @_Concurrency.MainActor @preconcurrency public func makeNSView(context: DarockUI.GeneralNSViewRepresenting.Context) -> some AppKit.NSView
@@ -146,82 +148,40 @@ public func NeuToggle(_ titleKey: SwiftUICore.LocalizedStringKey, isOn: SwiftUIC
 
 public func NeuNavigationLink(@SwiftUICore.ViewBuilder destination: () -> some View, @SwiftUICore.ViewBuilder label: () -> some View, cornerRadius: CoreFoundation.CGFloat = 18, paddings: [CoreFoundation.CGFloat] = [5, 20], width: CoreFoundation.CGFloat? = nil) -> some SwiftUICore.View
 
-#if compiler(>=5.3) && $RetroactiveAttribute
+extension SwiftUICore.Color {
+  public init(light: SwiftUICore.Color, dark: SwiftUICore.Color)
+  public init(light: AppKit.NSColor, dark: AppKit.NSColor)
+}
 extension Swift.Int : @retroactive Swift.Identifiable {
   public var id: Swift.Int {
     get
   }
   public typealias ID = Swift.Int
 }
-#else
-extension Swift.Int : Swift.Identifiable {
-  public var id: Swift.Int {
-    get
-  }
-  public typealias ID = Swift.Int
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
 extension Swift.Int8 : @retroactive Swift.Identifiable {
   public var id: Swift.Int8 {
     get
   }
   public typealias ID = Swift.Int8
 }
-#else
-extension Swift.Int8 : Swift.Identifiable {
-  public var id: Swift.Int8 {
-    get
-  }
-  public typealias ID = Swift.Int8
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
 extension Swift.Int16 : @retroactive Swift.Identifiable {
   public var id: Swift.Int16 {
     get
   }
   public typealias ID = Swift.Int16
 }
-#else
-extension Swift.Int16 : Swift.Identifiable {
-  public var id: Swift.Int16 {
-    get
-  }
-  public typealias ID = Swift.Int16
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
 extension Swift.Int32 : @retroactive Swift.Identifiable {
   public var id: Swift.Int32 {
     get
   }
   public typealias ID = Swift.Int32
 }
-#else
-extension Swift.Int32 : Swift.Identifiable {
-  public var id: Swift.Int32 {
-    get
-  }
-  public typealias ID = Swift.Int32
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
 extension Swift.Int64 : @retroactive Swift.Identifiable {
   public var id: Swift.Int64 {
     get
   }
   public typealias ID = Swift.Int64
 }
-#else
-extension Swift.Int64 : Swift.Identifiable {
-  public var id: Swift.Int64 {
-    get
-  }
-  public typealias ID = Swift.Int64
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
 @available(iOS 18.0, watchOS 11.0, macOS 15.0, visionOS 2.0, *)
 extension Swift.Int128 : @retroactive Swift.Identifiable {
   public var id: Swift.Int128 {
@@ -230,61 +190,24 @@ extension Swift.Int128 : @retroactive Swift.Identifiable {
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   public typealias ID = Swift.Int128
 }
-#else
-@available(iOS 18.0, watchOS 11.0, macOS 15.0, visionOS 2.0, *)
-extension Swift.Int128 : Swift.Identifiable {
-  public var id: Swift.Int128 {
-    get
-  }
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias ID = Swift.Int128
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
 extension Swift.Float : @retroactive Swift.Identifiable {
   public var id: Swift.Float {
     get
   }
   public typealias ID = Swift.Float
 }
-#else
-extension Swift.Float : Swift.Identifiable {
-  public var id: Swift.Float {
-    get
-  }
-  public typealias ID = Swift.Float
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
 extension Swift.Double : @retroactive Swift.Identifiable {
   public var id: Swift.Double {
     get
   }
   public typealias ID = Swift.Double
 }
-#else
-extension Swift.Double : Swift.Identifiable {
-  public var id: Swift.Double {
-    get
-  }
-  public typealias ID = Swift.Double
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
 extension Swift.String : @retroactive Swift.Identifiable {
   public var id: Swift.String {
     get
   }
   public typealias ID = Swift.String
 }
-#else
-extension Swift.String : Swift.Identifiable {
-  public var id: Swift.String {
-    get
-  }
-  public typealias ID = Swift.String
-}
-#endif
 @_spi(_internal) @available(iOS, unavailable)
 @available(macOS, unavailable)
 @_Concurrency.MainActor @preconcurrency public struct _SomeClassifyView : SwiftUICore.View {
@@ -347,7 +270,7 @@ extension AppKit.NSView {
   @_Concurrency.MainActor @preconcurrency public func hideFromCapture(hide: Swift.Bool = true) -> Swift.Bool
 }
 extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func hideFromCapture(_ hide: Swift.Bool = true) -> SwiftUICore.AnyView
+  @_Concurrency.MainActor @preconcurrency public func hideFromCapture(_ hide: Swift.Bool = true, fixLayout: Swift.Bool = false) -> SwiftUICore.AnyView
 }
 @usableFromInline
 package enum Log {
@@ -724,7 +647,10 @@ extension SwiftUICore.View {
   
 }
 extension SwiftUICore.View {
+  @available(*, deprecated, renamed: "disableAutoInputActions")
   @_Concurrency.MainActor @preconcurrency public func noAutoInput() -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func disableAutoInputActions() -> some SwiftUICore.View
   
 }
 extension SwiftUICore.Binding {
