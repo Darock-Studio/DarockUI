@@ -780,7 +780,7 @@ extension SwiftUICore.View {
   public typealias Body = @_opaqueReturnTypeOf("$s8DarockUI25_WatchContextMenuModifierV4body7contentQr05SwiftB005_ViewF8_ContentVyACyxGG_tF", 0) __<MenuItems>
 }
 extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func withDismissButton(_ action: @escaping () -> Swift.Void, placement: SwiftUICore.HorizontalAlignment = .trailing) -> some SwiftUICore.View
+  @_Concurrency.MainActor @preconcurrency public func withDismissButton(placement: SwiftUICore.HorizontalAlignment = .trailing, action: @escaping () -> Swift.Void) -> some SwiftUICore.View
   
 }
 @available(watchOS, unavailable)

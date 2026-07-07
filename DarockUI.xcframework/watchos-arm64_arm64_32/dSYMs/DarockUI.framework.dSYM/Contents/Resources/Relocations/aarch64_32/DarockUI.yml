@@ -2,8 +2,8 @@
 triple:          'arm64_32-apple-darwin'
 binary-path:     '/Volumes/workspace/DerivedData/Build/Products/Release-watchos/DarockUI.framework/DarockUI'
 relocations:
-  - { offset: 0x539ED, size: 0x4, addend: 0x0, symName: _DarockUIVersionString, symObjAddr: 0x0, symBinAddr: 0x28480, symSize: 0x0 }
-  - { offset: 0x53A20, size: 0x4, addend: 0x0, symName: _DarockUIVersionNumber, symObjAddr: 0x30, symBinAddr: 0x284B0, symSize: 0x0 }
+  - { offset: 0x539ED, size: 0x4, addend: 0x0, symName: _DarockUIVersionString, symObjAddr: 0x0, symBinAddr: 0x28580, symSize: 0x0 }
+  - { offset: 0x53A20, size: 0x4, addend: 0x0, symName: _DarockUIVersionNumber, symObjAddr: 0x30, symBinAddr: 0x285B0, symSize: 0x0 }
   - { offset: 0x53DBC, size: 0x4, addend: 0x0, symName: '_$s8DarockUI3LogO13runtimeIssuesyys12StaticStringVyXK_Says7CVarArg_pGyXKtFZfA0_', symObjAddr: 0x208, symBinAddr: 0x41F4, symSize: 0x10 }
   - { offset: 0x53DD0, size: 0x4, addend: 0x0, symName: '_$s8DarockUI25GeneralUIViewRepresentingV05SwiftB001_D13RepresentableAaD4ViewPWb', symObjAddr: 0x218, symBinAddr: 0x4204, symSize: 0x4 }
   - { offset: 0x53DE0, size: 0x4, addend: 0x0, symName: '_$s8DarockUI25GeneralUIViewRepresentingVAC05SwiftB04ViewAAWl', symObjAddr: 0x21C, symBinAddr: 0x4208, symSize: 0x40 }
@@ -562,40 +562,40 @@ relocations:
   - { offset: 0x65F33, size: 0x4, addend: 0x0, symName: '_$s8DarockUI25_WatchContextMenuModifierV4body7contentQr05SwiftB005_ViewF8_ContentVyACyxGG_tFAF15NavigationStackVyAF0L4PathVAF4ListVys5NeverOxGGycfU0_ASyXEfU_', symObjAddr: 0x2990, symBinAddr: 0x2502C, symSize: 0x130 }
   - { offset: 0x65F68, size: 0x4, addend: 0x0, symName: '_$s8DarockUI25_WatchContextMenuModifierV4body7contentQr05SwiftB005_ViewF8_ContentVyACyxGG_tFAF15NavigationStackVyAF0L4PathVAF4ListVys5NeverOxGGycfU0_ASyXEfU_xyXEfU_', symObjAddr: 0x2AC0, symBinAddr: 0x2515C, symSize: 0xB8 }
   - { offset: 0x65FDE, size: 0x4, addend: 0x0, symName: '_$s8DarockUI25_WatchContextMenuModifierVyxG05SwiftB004ViewF0AaeFP4body7content4BodyQzAE01_hF8_ContentVyxG_tFTW', symObjAddr: 0x2B84, symBinAddr: 0x25214, symSize: 0x4 }
-  - { offset: 0x662E6, size: 0x4, addend: 0x0, symName: '_$s7SwiftUI4ViewP06DarockB0E17withDismissButton_9placementQryyc_AA19HorizontalAlignmentVtF', symObjAddr: 0x0, symBinAddr: 0x262EC, symSize: 0x8C }
-  - { offset: 0x66351, size: 0x4, addend: 0x0, symName: '_$s7SwiftUI4ViewP06DarockB0E17withDismissButton_9placementQryyc_AA19HorizontalAlignmentVtF', symObjAddr: 0x0, symBinAddr: 0x262EC, symSize: 0x8C }
-  - { offset: 0x6664D, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVAC05SwiftB00E0AAWl', symObjAddr: 0x774, symBinAddr: 0x2690C, symSize: 0x40 }
-  - { offset: 0x6665D, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_TA', symObjAddr: 0xA20, symBinAddr: 0x26B9C, symSize: 0xC }
-  - { offset: 0x66687, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvgAA010TextSelectD0VycfU0_TA', symObjAddr: 0xB90, symBinAddr: 0x26D08, symSize: 0x28 }
-  - { offset: 0x6669B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvgAA010TextSelectD0VycfU0_TA', symObjAddr: 0xB90, symBinAddr: 0x26D08, symSize: 0x28 }
-  - { offset: 0x666CB, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewV05SwiftB00E0AA4BodyAdEP_AGWT', symObjAddr: 0xBB8, symBinAddr: 0x26D30, symSize: 0x10 }
-  - { offset: 0x666DB, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVyxG05SwiftB00D0AA4BodyAeFP_AHWT', symObjAddr: 0xBC8, symBinAddr: 0x26D40, symSize: 0x34 }
-  - { offset: 0x666EB, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwxx', symObjAddr: 0xC2C, symBinAddr: 0x26D7C, symSize: 0x10 }
-  - { offset: 0x666FB, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwca', symObjAddr: 0xC9C, symBinAddr: 0x26DEC, symSize: 0x6C }
-  - { offset: 0x6670B, size: 0x4, addend: 0x0, symName: ___swift_memcpy12_4, symObjAddr: 0xD08, symBinAddr: 0x26E58, symSize: 0x14 }
-  - { offset: 0x6671B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwta', symObjAddr: 0xD1C, symBinAddr: 0x26E6C, symSize: 0x50 }
-  - { offset: 0x6672B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwet', symObjAddr: 0xD6C, symBinAddr: 0x26EBC, symSize: 0x48 }
-  - { offset: 0x6673B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwst', symObjAddr: 0xDB4, symBinAddr: 0x26F04, symSize: 0x44 }
-  - { offset: 0x6674B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVMa', symObjAddr: 0xDF8, symBinAddr: 0x26F48, symSize: 0x10 }
-  - { offset: 0x6675B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVMi', symObjAddr: 0xE08, symBinAddr: 0x26F58, symSize: 0x8 }
-  - { offset: 0x6676B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwxx', symObjAddr: 0xE3C, symBinAddr: 0x26F60, symSize: 0x34 }
-  - { offset: 0x6677B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwcp', symObjAddr: 0xE70, symBinAddr: 0x26F94, symSize: 0x90 }
-  - { offset: 0x6678B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwca', symObjAddr: 0xF00, symBinAddr: 0x27024, symSize: 0xB0 }
-  - { offset: 0x6679B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwta', symObjAddr: 0xFBC, symBinAddr: 0x270D4, symSize: 0x80 }
-  - { offset: 0x667AB, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwet', symObjAddr: 0x103C, symBinAddr: 0x27154, symSize: 0x44 }
-  - { offset: 0x667BB, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwst', symObjAddr: 0x1080, symBinAddr: 0x27198, symSize: 0x48 }
-  - { offset: 0x667CB, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVMa', symObjAddr: 0x10C8, symBinAddr: 0x271E0, symSize: 0xC }
-  - { offset: 0x667DB, size: 0x4, addend: 0x0, symName: '_$s7SwiftUI6ButtonVyAA5LabelVyAA4TextVAA5ImageVGGSgWOc', symObjAddr: 0x120C, symBinAddr: 0x272E0, symSize: 0x50 }
-  - { offset: 0x667EB, size: 0x4, addend: 0x0, symName: '_$s7SwiftUI6ButtonVyAA5LabelVyAA4TextVAA5ImageVGGSgWOh', symObjAddr: 0x125C, symBinAddr: 0x27330, symSize: 0x48 }
-  - { offset: 0x667FB, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_yyScMYccfU1_TA', symObjAddr: 0x12DC, symBinAddr: 0x273B0, symSize: 0xC }
-  - { offset: 0x66838, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewV4textACSS_tcfC', symObjAddr: 0x0, symBinAddr: 0x26380, symSize: 0x1C }
-  - { offset: 0x66A5E, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewV4bodyQrvg', symObjAddr: 0x1C, symBinAddr: 0x2639C, symSize: 0xCC }
-  - { offset: 0x66B56, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV8$present05SwiftB07BindingVySbGvg', symObjAddr: 0x280, symBinAddr: 0x26468, symSize: 0x58 }
-  - { offset: 0x66B82, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV_11allowSelect4viewACyxGSS_SbxyctcfC', symObjAddr: 0x2D8, symBinAddr: 0x264C0, symSize: 0xA4 }
-  - { offset: 0x66BF3, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg', symObjAddr: 0x37C, symBinAddr: 0x26564, symSize: 0x3A8 }
-  - { offset: 0x66C21, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_', symObjAddr: 0x7B4, symBinAddr: 0x2694C, symSize: 0x24C }
-  - { offset: 0x66C73, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_APyXEfU0_', symObjAddr: 0xA30, symBinAddr: 0x26BA8, symSize: 0x60 }
-  - { offset: 0x66C89, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_yyScMYccfU1_', symObjAddr: 0xA90, symBinAddr: 0x26C08, symSize: 0x98 }
-  - { offset: 0x66CE0, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_APyXEfU2_', symObjAddr: 0xB28, symBinAddr: 0x26CA0, symSize: 0x68 }
-  - { offset: 0x66D80, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVyxG05SwiftB00D0AaeFP4body4BodyQzvgTW', symObjAddr: 0xC08, symBinAddr: 0x26D74, symSize: 0x4 }
+  - { offset: 0x662E6, size: 0x4, addend: 0x0, symName: '_$s7SwiftUI4ViewP06DarockB0E17withDismissButton9placement6actionQrAA19HorizontalAlignmentV_yyctF', symObjAddr: 0x0, symBinAddr: 0x262EC, symSize: 0x134 }
+  - { offset: 0x66351, size: 0x4, addend: 0x0, symName: '_$s7SwiftUI4ViewP06DarockB0E17withDismissButton9placement6actionQrAA19HorizontalAlignmentV_yyctF', symObjAddr: 0x0, symBinAddr: 0x262EC, symSize: 0x134 }
+  - { offset: 0x666C8, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVAC05SwiftB00E0AAWl', symObjAddr: 0x774, symBinAddr: 0x269B4, symSize: 0x40 }
+  - { offset: 0x666D8, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_TA', symObjAddr: 0xA20, symBinAddr: 0x26C44, symSize: 0xC }
+  - { offset: 0x66702, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvgAA010TextSelectD0VycfU0_TA', symObjAddr: 0xB90, symBinAddr: 0x26DB0, symSize: 0x28 }
+  - { offset: 0x66716, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvgAA010TextSelectD0VycfU0_TA', symObjAddr: 0xB90, symBinAddr: 0x26DB0, symSize: 0x28 }
+  - { offset: 0x66746, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewV05SwiftB00E0AA4BodyAdEP_AGWT', symObjAddr: 0xBB8, symBinAddr: 0x26DD8, symSize: 0x10 }
+  - { offset: 0x66756, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVyxG05SwiftB00D0AA4BodyAeFP_AHWT', symObjAddr: 0xBC8, symBinAddr: 0x26DE8, symSize: 0x34 }
+  - { offset: 0x66766, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwxx', symObjAddr: 0xC2C, symBinAddr: 0x26E24, symSize: 0x10 }
+  - { offset: 0x66776, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwca', symObjAddr: 0xC9C, symBinAddr: 0x26E94, symSize: 0x6C }
+  - { offset: 0x66786, size: 0x4, addend: 0x0, symName: ___swift_memcpy12_4, symObjAddr: 0xD08, symBinAddr: 0x26F00, symSize: 0x14 }
+  - { offset: 0x66796, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwta', symObjAddr: 0xD1C, symBinAddr: 0x26F14, symSize: 0x50 }
+  - { offset: 0x667A6, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwet', symObjAddr: 0xD6C, symBinAddr: 0x26F64, symSize: 0x48 }
+  - { offset: 0x667B6, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVwst', symObjAddr: 0xDB4, symBinAddr: 0x26FAC, symSize: 0x44 }
+  - { offset: 0x667C6, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewVMa', symObjAddr: 0xDF8, symBinAddr: 0x26FF0, symSize: 0x10 }
+  - { offset: 0x667D6, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVMi', symObjAddr: 0xE08, symBinAddr: 0x27000, symSize: 0x8 }
+  - { offset: 0x667E6, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwxx', symObjAddr: 0xE3C, symBinAddr: 0x27008, symSize: 0x34 }
+  - { offset: 0x667F6, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwcp', symObjAddr: 0xE70, symBinAddr: 0x2703C, symSize: 0x90 }
+  - { offset: 0x66806, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwca', symObjAddr: 0xF00, symBinAddr: 0x270CC, symSize: 0xB0 }
+  - { offset: 0x66816, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwta', symObjAddr: 0xFBC, symBinAddr: 0x2717C, symSize: 0x80 }
+  - { offset: 0x66826, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwet', symObjAddr: 0x103C, symBinAddr: 0x271FC, symSize: 0x44 }
+  - { offset: 0x66836, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVwst', symObjAddr: 0x1080, symBinAddr: 0x27240, symSize: 0x48 }
+  - { offset: 0x66846, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVMa', symObjAddr: 0x10C8, symBinAddr: 0x27288, symSize: 0xC }
+  - { offset: 0x66856, size: 0x4, addend: 0x0, symName: '_$s7SwiftUI6ButtonVyAA5LabelVyAA4TextVAA5ImageVGGSgWOc', symObjAddr: 0x120C, symBinAddr: 0x27388, symSize: 0x50 }
+  - { offset: 0x66866, size: 0x4, addend: 0x0, symName: '_$s7SwiftUI6ButtonVyAA5LabelVyAA4TextVAA5ImageVGGSgWOh', symObjAddr: 0x125C, symBinAddr: 0x273D8, symSize: 0x48 }
+  - { offset: 0x66876, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_yyScMYccfU1_TA', symObjAddr: 0x12DC, symBinAddr: 0x27458, symSize: 0xC }
+  - { offset: 0x668B3, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewV4textACSS_tcfC', symObjAddr: 0x0, symBinAddr: 0x26428, symSize: 0x1C }
+  - { offset: 0x66AD9, size: 0x4, addend: 0x0, symName: '_$s8DarockUI14TextSelectViewV4bodyQrvg', symObjAddr: 0x1C, symBinAddr: 0x26444, symSize: 0xCC }
+  - { offset: 0x66BD1, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV8$present05SwiftB07BindingVySbGvg', symObjAddr: 0x280, symBinAddr: 0x26510, symSize: 0x58 }
+  - { offset: 0x66BFD, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV_11allowSelect4viewACyxGSS_SbxyctcfC', symObjAddr: 0x2D8, symBinAddr: 0x26568, symSize: 0xA4 }
+  - { offset: 0x66C6E, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg', symObjAddr: 0x37C, symBinAddr: 0x2660C, symSize: 0x3A8 }
+  - { offset: 0x66C9C, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_', symObjAddr: 0x7B4, symBinAddr: 0x269F4, symSize: 0x24C }
+  - { offset: 0x66CEE, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_APyXEfU0_', symObjAddr: 0xA30, symBinAddr: 0x26C50, symSize: 0x60 }
+  - { offset: 0x66D04, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_yyScMYccfU1_', symObjAddr: 0xA90, symBinAddr: 0x26CB0, symSize: 0x98 }
+  - { offset: 0x66D5B, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewV4bodyQrvg05SwiftB005TupleD0VyAE6ButtonVyAE5LabelVyAE4TextVAE5ImageVGG_AQSgtGycfU_APyXEfU2_', symObjAddr: 0xB28, symBinAddr: 0x26D48, symSize: 0x68 }
+  - { offset: 0x66DFB, size: 0x4, addend: 0x0, symName: '_$s8DarockUI12CopyableViewVyxG05SwiftB00D0AaeFP4body4BodyQzvgTW', symObjAddr: 0xC08, symBinAddr: 0x26E1C, symSize: 0x4 }
 ...

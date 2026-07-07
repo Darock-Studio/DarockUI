@@ -686,7 +686,7 @@ extension SwiftUICore.View {
   
 }
 extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func withDismissButton(_ action: @escaping () -> Swift.Void, placement: SwiftUICore.HorizontalAlignment = .trailing) -> some SwiftUICore.View
+  @_Concurrency.MainActor @preconcurrency public func withDismissButton(placement: SwiftUICore.HorizontalAlignment = .trailing, action: @escaping () -> Swift.Void) -> some SwiftUICore.View
   
 }
 @available(watchOS, unavailable)
